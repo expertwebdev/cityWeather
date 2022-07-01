@@ -89,6 +89,9 @@
   color: #ffffff;
   text-align: center;
 }
+.area_state {
+  color: #ffb300;
+}
 .w_status {
   font-size: 1.5rem;
   color: #ffffff;
@@ -132,7 +135,7 @@
   color: #ffffff;
   float: right;
   cursor: pointer;
-  font-family: cursive;
+  font-family: sans-serif;
 }
 .alert_msg {
   position:absolute;
