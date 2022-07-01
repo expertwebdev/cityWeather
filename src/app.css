@@ -1,0 +1,146 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.hide {
+  display: none;
+}
+.container {
+  width: 100%;
+  height: max-content;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(./img/bg-3.jpg);
+  background-position: left;
+  background-size: cover;
+}
+.card {
+  position: relative;
+  margin: 0 2.5rem;
+  width: 100%;
+  max-width: 700px;
+  height: max-content;
+  min-height: 30rem;
+  border-radius: 1.2rem;
+  padding: 1.5rem 0;
+  background-color: #fff5;
+  backdrop-filter: blur(4px);
+  box-shadow: inset 0 0 5px #fff5;
+  /* color: #ffffff; */
+}
+
+.search_box {
+    /* background: #0005; */
+    width: max-content;
+    margin: 1rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search_box:hover .w_search{
+    background-color: #ffffff;
+    width: 180px;
+    padding: 0 1.2rem; 
+    margin-right: .5rem;
+}
+.w_search {
+    border: none;
+    height: 3rem;
+    outline: none;
+    border-radius: 1.5rem;
+    width: 0px;
+    transition: all 1s ease;
+}
+
+.search_btn {
+    cursor: pointer;
+    background-color: #ffffff;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%;
+}
+.search_btn:active{
+    background: #ddd;
+}
+
+.w_report {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 1rem;
+  gap: 0.6rem;
+}
+
+.fa-location-dot {
+    color: #e81515;
+    text-shadow: none;
+    margin-right: .5rem;
+    font-size: 1.8rem;
+}
+.area_name {
+  margin-top: 1rem;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  text-align: center;
+}
+.w_status {
+  font-size: 1.5rem;
+  color: #ffffff;
+  text-shadow: 1px 2px #000;
+  font-weight: 800;
+  font-family: cursive;
+  text-align: center;
+}
+
+.w_temp {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #ffb300;
+  text-align: center;
+
+}
+
+.w_report-desc {
+  text-align: center;
+  border-radius: 0.5rem;
+  font-weight: 600;
+}
+
+.alert_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 220px;
+  height: 220px;
+  background-color: #46413bc1;
+  backdrop-filter: blur(4px);
+  border-radius: 1rem;
+  padding: .2rem 1rem;
+  transition: all .5s linear ease-out;
+}
+
+.alert_close {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #ffffff;
+  float: right;
+  cursor: pointer;
+  font-family: cursive;
+}
+.alert_msg {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  font-size: 1.5rem;
+  width: 100%;
+}

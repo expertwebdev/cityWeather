@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City Weather</title>
+    <link rel="shortcut icon" href="./src/img/w_app-icon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./src/app.css">
+    <script type="module" src="./src/app.js" async></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="search_box">
+                <input type="text" class="w_search" placeholder="Search Your City">
+                <button class="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="w_report">
+                <h1 class="area_name"><i class="fa-solid fa-location-dot"></i><span class="city_name">Bangalore</span></h1>
+                <span class="w_status">A Rainy Day</span>
+                <span class="w_temp">25°</span>
+                <div class="w_report-desc">
+                    <p class="w_desc">Clear Sky</p>
+                    <p class="w_feel">Feels Like <span class="feelLike">21</span>°</p>
+                    <p class="w_wind-speed">Wind Speed : <span class="wind_speed">10</span>Km/h</p>
+                </div>
+            </div>
+        </div>
+        <div class="alert_box hide">
+            <span class="alert_close">x</span>
+            <p class="alert_msg">Oops! City Not Found</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
